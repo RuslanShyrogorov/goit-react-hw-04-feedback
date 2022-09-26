@@ -1,13 +1,6 @@
 import styled from 'styled-components';
 
-export const Title = styled.h2`
-  color: ${p => p.theme.colors.text};
-  font-weight: ${p => p.theme.fontWeights.bold};
-  font-size: ${p => p.theme.fontSizes.l};
-  margin-bottom: ${p => p.theme.space[3]}px;
-`;
-
-export const ButtonsWrapper = styled.div`
+export const ButtonsWrapper = styled.ul`
   display: flex;
   /* :not(:last-child) {
     margin-right: ${p => p.theme.space[4]};
@@ -40,9 +33,7 @@ export const Button = styled.button`
   }
 `;
 
-export const FeedbackWrapper = styled.ul``;
-
-export const FeedbackText = styled.li`
+export const FeedbackItem = styled.li`
   color: ${p => p.theme.colors.text};
   font-weight: ${p => p.theme.fontWeights.normal};
   font-size: ${p => p.theme.fontSizes.m};

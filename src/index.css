@@ -27,6 +27,7 @@ h6,
 p {
   margin: 0;
 }
+
 ul,
 ol {
   list-style: none;
@@ -37,4 +38,8 @@ img {
   display: block;
 
   height: auto;
+}
+
+a {
+  text-decoration: none;
 }
