@@ -2,10 +2,10 @@ import styled from 'styled-components';
 
 export const ButtonsWrapper = styled.ul`
   display: flex;
-  /* :not(:last-child) {
-    margin-right: ${p => p.theme.space[4]};
-  } */
-  margin-bottom: ${p => p.theme.space[5]};
+  gap: ${p => p.theme.space[3]}px;
+
+  margin-bottom: ${p => p.theme.space[4]}px;
+  margin-top: ${p => p.theme.space[2]}px;
 `;
 
 export const Button = styled.button`
@@ -21,9 +21,7 @@ export const Button = styled.button`
   border: ${p => p.theme.borders.normal};
   border-radius: ${p => p.theme.radii.normal};
   background-color: ${p => p.theme.colors.white};
-  /* background-color: ${p => {
-    return p.disabled ? p.theme.colors.muted : p.theme.colors.primary;
-  }}; */
+
   color: ${p => p.theme.colors.black};
   cursor: pointer;
   :hover:not(:disabled),
